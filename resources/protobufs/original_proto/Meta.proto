@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option java_package = "com.athena.model";
+option java_outer_classname = "RawDataStorageMetaInfo";
+
+message Meta {
+  string storage_uuid = 10;
+  google.protobuf.Timestamp creation_TS = 20;
+  google.protobuf.Timestamp last_update_TS = 30;
+  Request request = 40;
+  string raw_data_url = 50;
+  bytes raw_data = 60;
+}
+
+message Request {
+  string client_ip = 10;
+  string http_content_type = 20;
+  string http_method = 30;
+  map<string, string> headers = 40;
+  map<string, string> query_params = 50;
+}
+
+message Reply {
+  string storage_uuid = 10;
+  enum Status {
+    SUCCESS = 0;
+    ERROR = 1;
+  }
+  Status status = 20;
+}

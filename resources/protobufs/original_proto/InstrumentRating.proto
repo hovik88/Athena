@@ -1,0 +1,110 @@
+syntax = "proto3";
+
+
+option java_package = "com.athena.model";
+option java_outer_classname = "InstrumentRatingProto";
+
+message InstrumentRating {
+  repeated Identifier identifiers = 10;
+  MdyRating mdy_latest_rating = 20;
+  repeated MdyRating mdy_rating_history = 30;
+  SnpRating snp_latest_rating = 40;
+  repeated SnpRating snp_rating_history = 50;
+  FitchRating fitch_latest_rating = 60;
+  repeated FitchRating fitch_rating_history = 70;
+}
+
+message Identifier {
+  string id = 10;
+  string id_type = 20;
+}
+
+enum MdyRatingClass {
+  EMPTY_MDY_RATING_CLASS = 0;
+  Aaa_MDY_RATING_CLASS = 1;
+  Aa1_MDY_RATING_CLASS = 10;
+  Aa2_MDY_RATING_CLASS = 20;
+  Aa3_MDY_RATING_CLASS = 40;
+  A1_MDY_RATING_CLASS = 70;
+  A2_MDY_RATING_CLASS = 120;
+  A3_MDY_RATING_CLASS = 180;
+  Baa1_MDY_RATING_CLASS = 260;
+  Baa2_MDY_RATING_CLASS = 360;
+  Baa3_MDY_RATING_CLASS = 610;
+  Ba1_MDY_RATING_CLASS = 940;
+  Ba2_MDY_RATING_CLASS = 1350;
+  Ba3_MDY_RATING_CLASS = 1766;
+  B1_MDY_RATING_CLASS = 2220;
+  B2_MDY_RATING_CLASS = 720;
+  B3_MDY_RATING_CLASS = 3490;
+  Caa1_MDY_RATING_CLASS = 4770;
+  Caa2_MDY_RATING_CLASS = 6500;
+  Caa3_MDY_RATING_CLASS = 8070;
+  Ca_MDY_RATING_CLASS = 9998;
+  C_MDY_RATING_CLASS = 10000;
+}
+
+message MdyRating {
+  MdyRatingClass rating = 10;
+  string as_of_date = 20;
+}
+
+enum SnpRatingClass {
+  EMPTY_SNP_RATING_CLASS = 0;
+  AAA_SNP_RATING_CLASS = 1;
+  AAppp_SNP_RATING_CLASS = 10;
+  AA_SNP_RATING_CLASS = 20;
+  AAmmm_SNP_RATING_CLASS = 40;
+  Appp_SNP_RATING_CLASS = 70;
+  A_SNP_RATING_CLASS = 120;
+  Ammm_SNP_RATING_CLASS = 180;
+  BBBppp_SNP_RATING_CLASS = 260;
+  BBB_SNP_RATING_CLASS = 360;
+  BBBmmm_SNP_RATING_CLASS = 610;
+  BBppp_SNP_RATING_CLASS = 940;
+  BB_SNP_RATING_CLASS = 1350;
+  BBmmm_SNP_RATING_CLASS = 1766;
+  Bppp_SNP_RATING_CLASS = 2220;
+  B_SNP_RATING_CLASS = 720;
+  Bmmm_SNP_RATING_CLASS = 3490;
+  CCCppp_SNP_RATING_CLASS = 4770;
+  CCC_SNP_RATING_CLASS = 6500;
+  CCCmmm_SNP_RATING_CLASS = 8070;
+  CC_SNP_RATING_CLASS = 9998;
+  C_SNP_RATING_CLASS = 9999;
+  D_SNP_RATING_CLASS = 10000;
+}
+
+message SnpRating {
+  SnpRatingClass rating = 10;
+  string as_of_date = 20;
+}
+
+enum FitchRatingClass {
+  EMPTY_FITCH_RATING_CLASS = 0;
+  AAA_FITCH_RATING_CLASS = 1;
+  AAppp_FITCH_RATING_CLASS = 10;
+  AA_FITCH_RATING_CLASS = 20;
+  AAmmm_FITCH_RATING_CLASS = 40;
+  Appp_FITCH_RATING_CLASS = 70;
+  A_FITCH_RATING_CLASS = 120;
+  Ammm_FITCH_RATING_CLASS = 180;
+  BBBppp_FITCH_RATING_CLASS = 260;
+  BBB_FITCH_RATING_CLASS = 360;
+  BBBmmm_FITCH_RATING_CLASS = 610;
+  BBppp_FITCH_RATING_CLASS = 940;
+  BB_FITCH_RATING_CLASS = 1350;
+  BBmmm_FITCH_RATING_CLASS = 1766;
+  Bppp_FITCH_RATING_CLASS = 2220;
+  B_FITCH_RATING_CLASS = 2720;
+  Bmmm_FITCH_RATING_CLASS = 3490;
+  CCC_FITCH_RATING_CLASS = 6500;
+  DDD_FITCH_RATING_CLASS = 9998;
+  DD_FITCH_RATING_CLASS = 9999;
+  D_FITCH_RATING_CLASS = 10000;
+}
+
+message FitchRating {
+  FitchRatingClass rating = 10;
+  string as_of_date = 20;
+}

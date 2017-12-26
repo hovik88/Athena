@@ -1,0 +1,5 @@
+azure-mgmt-resource
+azure-mgmt-datalake-store
+azure-datalake-store
+azure-storage-file
+azure==2.0.0rc5

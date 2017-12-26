@@ -1,0 +1,27 @@
+R$13e37049-e3f3-11e7-a405-0003ff4cbff7¢İöŞÑ€«ª€òİöŞÑ€«ª€ÂŒ¢application/octet-streamÂ
+
+connection
+Keep-AliveÂ(
+content-typeapplication/octet-streamÂ%
+hostdatalakeapi.azurewebsites.netÂ
+max-forwards9Â
+content-length150Âä
+metadata×{"api_dt" : "2017-11-20T10:25:43.511Z","api_datatype"  : "rating","api_source" : "Moodys","api_provider" : "fundtastisch","api_asofdate"  : "2017-11-17T13:00:00.000Z","api_version" : "1.0.0", "api_update" : "false"}Â"
+x-waws-unencoded-url
+/api/storeÂ
+x-original-url
+/api/storeÂ4
+x-arr-log-id$a394c055-239b-4a3d-80c2-cfce1c447752Â/
+disguised-hostdatalakeapi.azurewebsites.netÂ#
+x-site-deployment-idDataLakeAPIÂ5
+was-default-hostnamedatalakeapi.azurewebsites.netÂ4
+x-forwarded-for!109.75.37.176:41554,109.75.37.176Â
+	x-arr-ssl2048|256|C=US, S=Washington, L=Redmond, O=Microsoft Corporation, OU=Microsoft IT, CN=Microsoft IT SSL SHA2|CN=*.azurewebsites.netÂ
+x-forwarded-protohttpsÂ;
+ms-aspnetcore-token$0237ca74-631a-49b9-9867-75ae9e5649deÂ!
+x-original-for127.0.0.1:50570Â
+x-original-protohttp’Wadl://scdmathenadev.azuredatalakestore.net/raw/13e37049-e3f3-11e7-a405-0003ff4cbff7.rawâ–identifier,assigment_date,rating
+AEA000201011,2017-05-30,(P)A1
+AEA002001013,2017-02-08,Baa2
+AEDFXA0M6V00,2016-09-01,Baa2
+AEE000301011,2016-06-16,Baa3
